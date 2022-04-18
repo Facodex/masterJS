@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos con JQuery</title>
+    <script type = "text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/02-eventos.js"></script>
+    <style>
+        .caja{
+            width: 250px;
+            height: 250px;
+            display: flex;
+            margin: 0 auto;
+            background-color: green;
+        }
+        .caja2{
+            width: 250px;
+            height: 250px;
+            display: flex;
+            margin: 0 auto;
+            background-color: peru;
+            display: none;
+        }
+        #ball{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            display: block;
+            background-color: blueviolet;
+            border-radius: 999px;
+            border: 2px solid;
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Eventos con JQuery</h1></header>
+    <!-- Caja para mouseover, mouseout, hover, click, dblclick, blur, focus, mousedown, mouseup -->
+    <div class="caja">
+        <p>Soy una aja para mouseover, mouseout, hover, click, dblclick, blur, focus, mousedown, mouseup</p>
+    </div>
+    <!-- form para mostrar los datos del input con un evento -->
+    <form action="#">
+        <input type="text" id="nombre">Nombre</input>
+    </form>
+    <div class ="caja2" id="datosUser">
+        <h2>Aqui mostrare los datos del form</h2>
+    </div>
+
+    <!-- div ball para perseguir el cursor -->
+    <div id="ball"></div>
+</body>
+</html>
